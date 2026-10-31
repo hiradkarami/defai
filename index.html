@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d17">
+  <meta name="description" content="ارائه تعاملی درباره زندگی، اندیشه و نقش حسن طهرانی‌مقدم در تاریخ شکل‌گیری ظرفیت موشکی ایران">
+  <title>حسن طهرانی‌مقدم | روایت یک مسیر</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+:root{
+  --bg:#080d17;--bg2:#0d1522;--panel:#101b2a;--panel2:#142235;--ink:#f2f0e9;
+  --muted:#a5afbd;--soft:#748194;--gold:#d6b36b;--gold2:#f0d79b;--line:rgba(222,231,240,.13);
+  --serif:Georgia,"Times New Roman",serif;--sans:"Vazirmatn",Tahoma,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidden}
+body{background-image:radial-gradient(ellipse at 12% 20%,rgba(31,55,83,.26),transparent 42%),linear-gradient(135deg,#080d17,#0a111d 65%,#090e17)}
+button,a{font:inherit}
+button{color:inherit}
+a{color:inherit;text-decoration:none}
+.progress-track{position:fixed;z-index:40;top:0;left:0;width:100%;height:3px;background:rgba(255,255,255,.07)}
+.progress-bar{height:100%;width:6.666%;background:var(--gold);transition:width .45s ease}
+.topbar,.controlbar{position:fixed;z-index:30;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:16px 4.4vw}
+.topbar{top:3px;border-bottom:1px solid rgba(255,255,255,.055);background:rgba(8,13,23,.74);backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{width:35px;height:35px;display:grid;place-items:center;border:1px solid rgba(214,179,107,.6);color:var(--gold);font-family:var(--serif);font-size:22px}
+.brand strong,.brand small{display:block}.brand strong{font-size:12px;letter-spacing:.02em}.brand small{font-size:9px;color:var(--soft);margin-top:2px}
+.top-actions{display:flex;gap:8px}
+.icon-button{border:1px solid var(--line);background:transparent;padding:8px 11px;border-radius:3px;font-size:11px;color:#c6ced8;cursor:pointer;transition:.2s}
+.icon-button:hover,.icon-button[aria-pressed="true"]{border-color:var(--gold);color:var(--gold2);background:rgba(214,179,107,.08)}
+.presentation{position:relative;width:100%;height:100dvh;min-height:540px;overflow:hidden}
+.slide{position:absolute;inset:0;padding:118px 9vw 94px;opacity:0;visibility:hidden;transform:translateX(32px) scale(.99);transition:opacity .48s ease,transform .55s cubic-bezier(.2,.7,.2,1),visibility .55s;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#39475a transparent}
+.slide.active{opacity:1;visibility:visible;transform:translateX(0) scale(1);z-index:2}
+.slide.exit-left{transform:translateX(-32px) scale(.99)}
+.slide-head{display:flex;align-items:center;gap:15px;margin-bottom:36px;color:var(--soft);font-size:10px}
+.chapter{color:var(--gold);letter-spacing:.1em}.rule{height:1px;flex:1;background:var(--line)}.date-tag{color:#8995a5}
+.eyebrow{font-size:10px;letter-spacing:.16em;color:var(--gold);margin:0 0 16px;font-weight:600}
+h1,h2,h3,p{margin-top:0}
+h1,h2{font-weight:500;line-height:1.35;letter-spacing:-.035em}
+h2{font-size:clamp(30px,4vw,53px);margin-bottom:22px}
+h2 em,h1 em{font-style:normal;color:var(--gold2)}
+h3{font-size:19px;font-weight:600}
+.lead{font-size:clamp(14px,1.4vw,18px);line-height:2.15;color:#c4ccd6;font-weight:300;max-width:650px}
+.lead.narrow{max-width:790px}
+.source-note{font-size:10px;line-height:1.9;color:#8290a1;margin-top:25px;border-right:2px solid rgba(214,179,107,.5);padding-right:12px}
+.hero{padding:120px 10vw 80px;background:radial-gradient(ellipse at 78% 48%,rgba(40,61,85,.38),transparent 34%),linear-gradient(110deg,#080d17 20%,#0d1725 100%)}
+.hero:before{content:"";position:absolute;inset:0;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,transparent,black)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:7vw;height:100%}
+.hero-copy{padding-bottom:15px}.hero-kicker{font-size:12px;color:#b9c3ce;letter-spacing:.08em;margin-bottom:12px}
+.hero h1{font-size:clamp(55px,8.5vw,108px);font-weight:500;line-height:1.17;margin:0 0 20px}
+.hero-subtitle{font-size:clamp(15px,1.7vw,21px);color:#c3ccd6;font-weight:300}
+.hero-meta{display:flex;align-items:center;gap:13px;color:#8794a5;font-size:10px;margin:27px 0 30px}.hero-meta i{height:16px;width:1px;background:var(--gold)}
+.primary-button{border:1px solid var(--gold);background:var(--gold);color:#121720;padding:12px 22px;font-weight:700;font-size:12px;cursor:pointer;transition:.25s}
+.primary-button:hover{background:var(--gold2);transform:translateY(-2px)}.primary-button b{margin-right:22px;font-size:17px}
+.portrait-frame{position:relative;margin:0 auto;width:min(31vw,365px);aspect-ratio:4/5;border:1px solid rgba(214,179,107,.55);padding:10px;background:#111b29;box-shadow:24px 24px 0 rgba(214,179,107,.055)}
+.portrait-frame:after{content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.12);pointer-events:none}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(100%) contrast(1.08);display:block;background:linear-gradient(145deg,#243448,#101722)}
+.portrait-frame figcaption{position:absolute;bottom:-34px;right:0;font-size:8px;color:#778598}
+.portrait-glow{position:absolute;inset:-24px;background:radial-gradient(ellipse,rgba(214,179,107,.15),transparent 67%);z-index:-1}
+.hero-bottom{position:absolute;bottom:98px;left:10vw;right:10vw;display:flex;justify-content:space-between;color:#647184;font-size:9px;letter-spacing:.12em}
+.split-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:8vw;align-items:center;min-height:48%}
+.question-panel{position:relative;padding:40px 38px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(20,34,53,.9),rgba(13,22,35,.55));min-height:250px;display:flex;flex-direction:column;justify-content:center}
+.quote-mark{font-family:var(--serif);font-size:70px;color:var(--gold);line-height:.8}
+.question-panel p{font-size:clamp(20px,2.4vw,31px);line-height:1.9;margin:15px 0 25px;font-weight:400}
+.question-foot{font-size:10px;color:var(--gold)}
+.three-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px;border-top:1px solid var(--line);padding-top:22px}
+.three-points article{display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:center}
+.three-points article>b{grid-row:span 2;color:var(--gold);font:22px var(--serif)}
+.three-points strong{font-size:13px}.three-points span{font-size:10px;color:var(--muted)}
+.bio-layout{grid-template-columns:1.3fr .7fr}
+.clean-list{list-style:none;padding:0;margin:25px 0 0}
+.clean-list li{padding:13px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.9;color:#b9c3ce}
+.clean-list li span{display:block;color:var(--gold);font-size:10px;margin-bottom:3px}
+.date-monument{height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid var(--line);position:relative;background:radial-gradient(ellipse,rgba(214,179,107,.08),transparent 62%)}
+.date-monument:before,.date-monument:after{content:"";position:absolute;width:38px;height:38px;border-color:var(--gold);opacity:.7}
+.date-monument:before{top:15px;right:15px;border-top:1px solid;border-right:1px solid}.date-monument:after{bottom:15px;left:15px;border-bottom:1px solid;border-left:1px solid}
+.date-label{font-size:10px;color:var(--muted)}.date-monument strong{font:clamp(95px,13vw,150px)/1 var(--serif);color:var(--gold2);margin:14px 0 0}.date-monument>span:not(.date-label){font-size:20px}.date-line{width:45px;height:1px;background:var(--gold);margin:22px 0}.date-monument small{color:var(--muted);font-size:11px}
+.map-abstract{position:absolute;bottom:20px;left:24px;font-size:9px;color:#667488}.map-abstract i{display:inline-block;width:50px;height:1px;background:var(--gold);margin:0 8px;vertical-align:middle}.map-abstract b{display:inline-block;width:5px;height:5px;background:var(--gold);border-radius:50%}
+.era-band{display:flex;align-items:center;gap:12px;margin:48px 0 34px;color:var(--gold);font:18px var(--serif)}
+.era-line{height:1px;flex:1;background:linear-gradient(90deg,var(--gold),rgba(214,179,107,.12))}
+.two-columns{display:grid;grid-template-columns:1fr 1fr;gap:5vw}
+.editorial-block{position:relative;padding:24px 28px 20px;border-top:1px solid var(--gold);background:rgba(17,29,45,.55)}
+.block-index{font:28px var(--serif);color:var(--gold)}.editorial-block h3{margin:12px 0}.editorial-block p{font-size:12px;line-height:2.1;color:#adb8c5}
+.bottom-callout{display:flex;gap:24px;align-items:center;margin-top:27px;padding:15px 20px;background:rgba(214,179,107,.07);border-right:2px solid var(--gold);font-size:11px;color:#b8c2cf}
+.bottom-callout b{color:var(--gold2);white-space:nowrap}
+.war-layout{display:grid;grid-template-columns:1fr .9fr;gap:7vw;align-items:center}
+.pressure-list{border-right:1px solid rgba(214,179,107,.4);padding-right:30px}
+.pressure-list>div{position:relative;padding:0 0 25px 0;margin-bottom:25px;border-bottom:1px solid var(--line)}
+.pressure-list>div:last-child{border:0;margin:0}.pressure-list span{position:absolute;right:-43px;top:0;color:var(--gold);font:18px var(--serif)}
+.pressure-list strong{font-size:14px}.pressure-list p{font-size:11px;line-height:1.9;color:var(--muted);margin:7px 0 0}
+.citation-strip{position:absolute;bottom:102px;right:9vw;font-size:9px;color:#7f8b9a}
+.process-flow{display:flex;align-items:stretch;gap:13px;margin:45px 0 35px}
+.process-step{flex:1;min-height:150px;border:1px solid var(--line);padding:18px 15px;background:rgba(16,27,42,.7);display:flex;flex-direction:column;justify-content:space-between}
+.process-step span{font:27px var(--serif);color:var(--gold)}.process-step strong{font-size:13px}.process-step small{font-size:10px;color:var(--muted);line-height:1.8}
+.flow-arrow{align-self:center;color:var(--gold);font-size:20px}
+.footnote-panel{display:flex;gap:22px;padding:17px 22px;background:rgba(214,179,107,.06);border-right:2px solid var(--gold);align-items:center}
+.footnote-panel strong{font-size:12px;color:var(--gold2);white-space:nowrap}.footnote-panel p{font-size:11px;line-height:1.9;color:#b6c0cc;margin:0}
+.mission-layout{display:grid;grid-template-columns:1fr .85fr;gap:7vw;align-items:center}
+.fact-line{display:flex;align-items:center;gap:18px;padding:13px 0;border-bottom:1px solid var(--line);font-size:11px;color:#aeb9c6}
+.fact-line b{font:22px var(--serif);color:var(--gold2);min-width:50px}
+.mission-visual{height:330px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle,rgba(214,179,107,.12),transparent 60%)}
+.orbit{position:absolute;border:1px solid rgba(214,179,107,.28);border-radius:50%;width:250px;height:250px}.orbit-two{width:180px;height:180px;border-style:dashed;opacity:.7}
+.node{position:absolute;border:1px solid var(--gold);background:#101a28;color:var(--gold2);padding:8px 12px;font-size:10px}
+.node-center{font:24px var(--serif);padding:20px;border-radius:50%;background:#172338}
+.node-a{top:35px;right:45px}.node-b{bottom:48px;right:35px}.node-c{bottom:54px;left:40px}
+.mission-visual p{position:absolute;bottom:7px;right:0;left:0;text-align:center;font-size:10px;color:#8492a3;line-height:1.8}
+.capacity-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:center;margin-top:30px}
+.capacity-quote{border-right:2px solid var(--gold);padding:0 25px 0 0}
+.giant-quote{font:80px/.6 var(--serif);color:var(--gold)}.capacity-quote p{font-size:21px;line-height:2;color:#d5dbe2}.capacity-quote small{font-size:9px;color:var(--soft)}
+.capacity-steps{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.capacity-steps div{padding:22px;border:1px solid var(--line);background:rgba(16,27,42,.55)}
+.capacity-steps b,.capacity-steps span{display:block}.capacity-steps b{font-size:14px;color:var(--gold2);margin-bottom:8px}.capacity-steps span{font-size:10px;color:var(--muted)}
+.role-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:6vw;margin-top:25px;align-items:center}
+.role-chart{border:1px solid var(--line);padding:25px 28px;background:rgba(16,27,42,.55)}
+.chart-caption{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.chart-caption strong{font-size:13px}.chart-caption span{font-size:9px;color:var(--soft)}
+.stage-row{display:grid;grid-template-columns:25px 1fr 30%;align-items:center;gap:12px;margin:15px 0}
+.stage-row>span{color:var(--gold);font:17px var(--serif)}
+.stage-row b,.stage-row small{display:block}.stage-row b{font-size:11px}.stage-row small{font-size:9px;color:var(--soft);margin-top:3px}
+.stage-row i{height:4px;background:rgba(255,255,255,.07);position:relative}.stage-row i:after{content:"";position:absolute;right:0;top:0;bottom:0;width:var(--w);background:var(--gold)}
+.role-aside h3{font-size:18px;line-height:1.7}.role-aside p{font-size:11px;line-height:2.1;color:var(--muted)}
+.mini-stat{border-top:1px solid var(--line);padding-top:15px;margin-top:22px}.mini-stat strong{display:block;color:var(--gold);font-size:12px}.mini-stat span{font-size:10px;color:var(--soft)}
+.timeline-shell{margin-top:25px;border:1px solid var(--line);background:rgba(16,27,42,.58);padding:28px}
+.timeline-detail{min-height:138px;border-right:2px solid var(--gold);padding-right:22px;margin-bottom:32px}
+.detail-year{font:34px var(--serif);color:var(--gold2)}.timeline-detail h3{margin:5px 0 8px;font-size:17px}.timeline-detail p{font-size:11px;color:#b7c2ce;line-height:1.9;margin:0 0 7px}.timeline-detail small{font-size:9px;color:var(--soft)}
+.timeline-track{display:flex;justify-content:space-between;position:relative;gap:6px;padding-top:5px}
+.timeline-track:before{content:"";position:absolute;top:11px;right:2%;left:2%;height:1px;background:linear-gradient(90deg,rgba(214,179,107,.18),var(--gold),rgba(214,179,107,.18))}
+.time-point{position:relative;z-index:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:13px;cursor:pointer;color:#8793a2;font-size:10px;padding:0 2px}
+.time-point i{width:12px;height:12px;border:1px solid var(--gold);background:var(--bg2);border-radius:50%;transition:.2s}
+.time-point.selected{color:var(--gold2)}.time-point.selected i{background:var(--gold);box-shadow:0 0 0 5px rgba(214,179,107,.12)}
+.timeline-hint{font-size:9px;color:var(--soft);margin-top:24px}
+.timeline-legend{display:flex;gap:25px;margin-top:18px;font-size:9px;color:var(--soft)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px}.dot.fact{background:var(--gold)}.dot.narrative{border:1px solid var(--gold)}
+.traits-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:center;margin-top:30px}
+.trait-feature{padding:28px;border:1px solid var(--line);background:radial-gradient(circle at 15% 0,rgba(214,179,107,.12),transparent 55%),rgba(16,27,42,.55)}
+.trait-symbol{font:45px var(--serif);color:var(--gold)}.trait-feature h3{font-size:20px;margin:18px 0 9px}.trait-feature p{font-size:11px;color:var(--muted);line-height:2}
+.trait-list>div{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px solid var(--line)}.trait-list b{font-size:13px;color:var(--gold2)}.trait-list span{font-size:10px;color:var(--muted)}
+.legacy-layout{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:7vw}
+.legacy-title h2{font-size:clamp(30px,4vw,49px)}.legacy-orbit{height:340px;position:relative;display:grid;place-items:center}
+.legacy-orbit:before,.legacy-orbit:after{content:"";position:absolute;border:1px solid rgba(214,179,107,.24);border-radius:50%;width:290px;height:290px}.legacy-orbit:after{width:205px;height:205px;border-style:dashed}
+.legacy-center{position:relative;z-index:2;width:110px;height:110px;border-radius:50%;display:grid;place-items:center;text-align:center;background:#19283b;border:1px solid var(--gold);font-size:14px;color:var(--gold2)}
+.legacy-node{position:absolute;z-index:3;padding:12px 16px;border:1px solid var(--line);background:#101b2a;text-align:center;font-size:10px;line-height:1.6}
+.n1{top:0;left:calc(50% - 39px)}.n2{right:0;top:calc(50% - 20px)}.n3{bottom:0;left:calc(50% - 39px)}.n4{left:0;top:calc(50% - 20px)}
+.legacy-footer{display:flex;gap:22px;align-items:center;border-top:1px solid var(--line);padding-top:18px;margin-top:14px;font-size:11px;color:#b8c3ce}.legacy-footer b{color:var(--gold);white-space:nowrap}
+.memorial-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:8vw;align-items:center}
+.memorial-date{height:320px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(ellipse,rgba(214,179,107,.1),transparent 70%)}
+.memorial-date span{font:clamp(100px,13vw,150px)/1 var(--serif);color:var(--gold2)}.memorial-date small{font-size:18px}.memorial-date i{width:42px;height:1px;background:var(--gold);margin:20px}.memorial-date b{font-size:11px;color:var(--muted)}
+.memorial-copy p:not(.eyebrow):not(.lead){font-size:12px;line-height:2.1;color:#b5bfcb}
+.respect-note{margin-top:25px;padding:13px 17px;border-right:2px solid var(--gold);background:rgba(214,179,107,.06);font-size:11px;color:var(--gold2)}
+.balance-layout{display:grid;grid-template-columns:1fr 70px 1fr;gap:25px;align-items:stretch;margin-top:40px}
+.balance-side{padding:25px 27px;border-top:1px solid var(--gold);background:rgba(16,27,42,.58)}
+.balance-label{font-size:9px;color:var(--gold)}.balance-side h3{margin:13px 0;font-size:17px}.balance-side p{font-size:11px;line-height:2;color:var(--muted)}
+.balance-symbol{display:grid;place-items:center;color:var(--gold);font:45px var(--serif)}
+.conclusion-line{margin-top:34px;text-align:center;color:var(--gold2);font-size:clamp(14px,1.8vw,20px);padding:20px;border-top:1px solid var(--line)}
+.source-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-top:25px}
+.source-list a{display:flex;align-items:center;gap:14px;padding:12px 14px;border-bottom:1px solid var(--line);transition:.2s}
+.source-list a:hover{background:rgba(214,179,107,.06);border-color:rgba(214,179,107,.5)}
+.source-list a>span{font:20px var(--serif);color:var(--gold)}
+.source-list a div{flex:1}.source-list b,.source-list small{display:block}.source-list b{font-size:11px}.source-list small{font-size:9px;color:var(--soft);margin-top:4px;line-height:1.6}
+.source-list i{font-style:normal;color:var(--gold)}
+.method-note{display:flex;gap:18px;margin-top:23px;padding:14px 17px;background:rgba(214,179,107,.06);border-right:2px solid var(--gold);font-size:10px;line-height:1.9;color:#aeb9c6}
+.method-note b{color:var(--gold2);white-space:nowrap}.end-mark{text-align:center;margin-top:25px;color:var(--gold2);font-size:13px}.end-mark span{padding:0 9px;color:var(--soft)}
+.controlbar{bottom:0;border-top:1px solid rgba(255,255,255,.06);background:rgba(8,13,23,.84);backdrop-filter:blur(14px);padding-top:13px;padding-bottom:13px}
+.keyboard-hint{font-size:9px;color:var(--soft);display:flex;align-items:center;gap:7px}.keyboard-hint span{color:#455365}
+kbd{font-family:var(--sans);border:1px solid #364355;padding:2px 6px;border-radius:3px;color:#c6ced8;font-size:9px}
+.slide-counter{display:flex;gap:8px;align-items:center;font:14px var(--serif);color:var(--gold2)}.slide-counter i{font-style:normal;color:#536174}
+.nav-controls{display:flex;gap:7px}.nav-button{width:36px;height:32px;border:1px solid var(--line);background:transparent;color:#d7dce3;cursor:pointer;font-size:16px}.nav-button:hover{border-color:var(--gold);color:var(--gold)}.nav-button:disabled{opacity:.25;cursor:not-allowed}.nav-button.next{background:var(--gold);color:#101722;border-color:var(--gold)}
+.side-panel{position:fixed;z-index:35;top:74px;bottom:64px;width:min(350px,90vw);background:#101b2a;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.4);padding:20px;overflow:auto}
+.outline-panel{right:4vw}.notes-panel{left:4vw}
+.panel-heading{display:flex;justify-content:space-between;align-items:center;padding-bottom:15px;border-bottom:1px solid var(--line);font-size:13px;color:var(--gold2)}
+.close-panel{background:none;border:0;color:var(--muted);font-size:22px;cursor:pointer}
+#slideOutline{display:grid;gap:5px;padding-top:14px}
+.outline-item{display:flex;align-items:center;gap:12px;text-align:right;padding:10px;border:1px solid transparent;background:transparent;color:#b8c2cf;cursor:pointer;font-size:11px}
+.outline-item span{color:var(--gold);font:15px var(--serif)}.outline-item:hover,.outline-item.current{background:rgba(214,179,107,.08);border-color:rgba(214,179,107,.25);color:var(--gold2)}
+#notesText{font-size:12px;line-height:2.1;color:#c3ccd6;margin:20px 0}.notes-panel>small{font-size:9px;line-height:1.8;color:var(--soft)}
+.image-modal{position:fixed;inset:0;z-index:60;background:rgba(3,6,11,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5vw}
+.image-modal[hidden],.side-panel[hidden]{display:none}
+.image-modal img{max-width:min(90vw,850px);max-height:78vh;object-fit:contain;border:1px solid rgba(214,179,107,.5)}
+.image-modal button{position:absolute;top:25px;left:35px;background:none;border:1px solid var(--line);color:white;font-size:28px;width:42px;height:42px;cursor:pointer}
+.image-modal p{font-size:10px;color:var(--muted);margin-top:12px}
+.zoomable{cursor:zoom-in}
+.toast{position:fixed;z-index:70;bottom:75px;left:50%;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:#1a2a40;border:1px solid var(--line);padding:9px 15px;font-size:10px;color:#e7dfca;transition:.25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.animations-paused *,body.animations-paused *{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+@media(max-width:900px){
+ .topbar,.controlbar{padding-left:20px;padding-right:20px}.icon-button{padding:8px}.icon-button span{display:none}
+ .slide{padding:105px 6vw 90px}.hero{padding:105px 7vw 85px}.hero-grid{gap:5vw}.portrait-frame{width:min(34vw,300px)}
+ .split-layout,.war-layout,.mission-layout,.capacity-grid,.role-layout,.traits-layout,.legacy-layout,.memorial-layout{gap:4vw}
+ .process-flow{gap:6px}.process-step{padding:14px 10px}.flow-arrow{font-size:15px}
+ .citation-strip{bottom:88px}
+}
+@media(max-width:650px){
+ html,body{overflow:hidden}.presentation{min-height:500px}.topbar{padding:11px 14px}.brand-mark{width:30px;height:30px}.brand strong{font-size:10px}.brand small{font-size:8px}
+ .top-actions{gap:4px}.icon-button{font-size:10px;padding:7px 8px}
+ .slide{padding:90px 22px 85px}.slide-head{margin-bottom:24px;font-size:8px;gap:9px}
+ h2{font-size:31px}.lead{font-size:13px;line-height:2}
+ .hero{padding:90px 24px 85px}.hero-grid{grid-template-columns:1fr;align-content:center;gap:20px}
+ .hero-copy{order:2}.hero h1{font-size:57px;margin-bottom:10px}.hero-kicker{font-size:10px}.hero-subtitle{font-size:13px}
+ .hero-meta{margin:15px 0 18px;flex-wrap:wrap}.portrait-frame{order:1;width:145px;aspect-ratio:1;margin:0 0 0 auto;padding:5px}.portrait-frame:after{inset:10px}.portrait-frame figcaption{display:none}
+ .hero-bottom{bottom:75px;left:24px;right:24px;font-size:8px}
+ .split-layout,.bio-layout,.war-layout,.mission-layout,.capacity-grid,.role-layout,.traits-layout,.legacy-layout,.memorial-layout{grid-template-columns:1fr;gap:24px}
+ .question-panel{min-height:190px;padding:24px}.question-panel p{font-size:20px}
+ .three-points{gap:8px;margin-top:24px;padding-top:15px}.three-points article{grid-template-columns:22px 1fr;column-gap:6px}.three-points article>b{font-size:17px}.three-points strong{font-size:10px}.three-points span{font-size:8px}
+ .date-monument{height:220px}.date-monument strong{font-size:90px}
+ .era-band{margin:25px 0}.era-band{font-size:14px}
+ .two-columns{grid-template-columns:1fr;gap:12px}.editorial-block{padding:15px 18px}
+ .bottom-callout{margin-top:15px;font-size:9px;gap:12px}
+ .pressure-list{margin:5px 0 0 15px}.pressure-list>div{padding-bottom:13px;margin-bottom:13px}.pressure-list span{right:-30px}
+ .citation-strip{position:static;margin-top:20px;line-height:1.7}
+ .process-flow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:25px 0}.process-step{min-height:120px}.flow-arrow{display:none}
+ .footnote-panel{align-items:flex-start;gap:12px;padding:12px}.footnote-panel p{font-size:9px}
+ .mission-visual{height:235px}.orbit{width:190px;height:190px}.orbit-two{width:135px;height:135px}
+ .capacity-quote p{font-size:17px}.capacity-steps{gap:8px}.capacity-steps div{padding:15px}
+ .role-chart{padding:17px}.chart-caption{align-items:flex-start;gap:10px}.chart-caption span{font-size:8px;text-align:left}
+ .stage-row{grid-template-columns:18px 1fr 22%;gap:7px}.stage-row b{font-size:9px}.stage-row small{font-size:8px}
+ .timeline-shell{padding:17px}.timeline-detail{min-height:150px;margin-bottom:20px}
+ .timeline-track{gap:0}.time-point{font-size:8px}.time-point i{width:9px;height:9px}
+ .timeline-legend{gap:12px;font-size:8px;flex-wrap:wrap}
+ .trait-list>div{display:block;padding:12px 0}.trait-list span{display:block;margin-top:4px}
+ .legacy-orbit{height:270px}.legacy-orbit:before{width:230px;height:230px}.legacy-orbit:after{width:165px;height:165px}.legacy-center{width:88px;height:88px;font-size:12px}
+ .legacy-node{padding:8px 10px;font-size:8px}
+ .legacy-footer{font-size:9px;gap:12px;align-items:flex-start}
+ .memorial-date{height:170px}.memorial-date span{font-size:80px}.memorial-date small{font-size:14px}.memorial-date i{margin:10px}
+ .balance-layout{grid-template-columns:1fr;gap:10px;margin-top:20px}.balance-symbol{height:20px;font-size:28px}
+ .balance-side{padding:16px}.balance-side p{margin-bottom:0}
+ .conclusion-line{margin-top:18px;padding:15px;font-size:13px}
+ .source-list{grid-template-columns:1fr;gap:0;margin-top:15px}.source-list a{padding:10px 5px}.source-list b{font-size:10px}.source-list small{font-size:8px}
+ .method-note{font-size:8px;gap:10px;padding:10px}.end-mark{margin-top:13px;font-size:11px}
+ .controlbar{padding:9px 14px}.keyboard-hint{font-size:0;gap:4px}.keyboard-hint kbd{font-size:8px}.keyboard-hint span{display:none}
+ .slide-counter{font-size:12px}.nav-button{width:32px;height:29px}
+ .side-panel{top:62px;bottom:54px;width:calc(100vw - 28px)}.outline-panel{right:14px}.notes-panel{left:14px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print{
+ @page{size:landscape;margin:10mm}
+ html,body{overflow:visible!important;background:#080d17!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .topbar,.controlbar,.progress-track,.side-panel,.toast,.image-modal{display:none!important}
+ .presentation{height:auto;min-height:0;overflow:visible}
+ .slide{position:relative!important;inset:auto!important;opacity:1!important;visibility:visible!important;transform:none!important;width:100%;height:185mm;min-height:0;overflow:hidden;page-break-after:always;break-after:page;padding:18mm 20mm 15mm}
+ .slide:last-child{page-break-after:auto;break-after:auto}
+ .hero{height:185mm}
+ .source-list a{break-inside:avoid}
+ .portrait-frame{width:75mm}
+}
+
+</style>
+</head>
+<body>
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ابتدای ارائه">
+      <span class="brand-mark">ر</span>
+      <span><strong>روایت یک مسیر</strong><small>تاریخ معاصر ایران</small></span>
+    </a>
+    <div class="top-actions">
+      <button class="icon-button" id="outlineBtn" aria-expanded="false" aria-controls="outlinePanel" title="فهرست اسلایدها">☷ <span>فهرست</span></button>
+      <button class="icon-button" id="notesBtn" aria-expanded="false" aria-controls="notesPanel" title="یادداشت ارائه‌دهنده">▤ <span>یادداشت</span></button>
+      <button class="icon-button" id="motionBtn" aria-pressed="false" title="توقف انیمیشن‌ها">Ⅱ <span>توقف حرکت</span></button>
+      <button class="icon-button" id="fullscreenBtn" title="نمایش تمام‌صفحه">⛶ <span>تمام‌صفحه</span></button>
+      <button class="icon-button" id="printBtn" title="چاپ یا ذخیره PDF">⎙ <span>چاپ / PDF</span></button>
+    </div>
+  </header>
+
+  <aside class="side-panel outline-panel" id="outlinePanel" aria-label="فهرست اسلایدها" hidden>
+    <div class="panel-heading"><strong>فهرست روایت</strong><button class="close-panel" data-close="outlinePanel" aria-label="بستن">×</button></div>
+    <nav id="slideOutline"></nav>
+  </aside>
+
+  <aside class="side-panel notes-panel" id="notesPanel" aria-label="یادداشت ارائه‌دهنده" hidden>
+    <div class="panel-heading"><strong>یادداشت ارائه‌دهنده</strong><button class="close-panel" data-close="notesPanel" aria-label="بستن">×</button></div>
+    <p id="notesText">یادداشت هر اسلاید در این بخش نمایش داده می‌شود.</p>
+    <small>این یادداشت‌ها برای راهنمایی سخنران‌اند و در چاپ اسلایدها نمایش داده نمی‌شوند.</small>
+  </aside>
+
+  <main id="presentation" class="presentation" aria-live="off">
+    <section class="slide hero active" data-title="صفحه افتتاحیه" data-notes="ارائه را با مکث آغاز کنید. تأکید کنید که موضوع فقط زندگی یک فرمانده نیست؛ بلکه مطالعه پیوند میان جنگ، نهادسازی، تخصص و سیاست دفاعی است.">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> مستند تاریخی · پژوهش و روایت</p>
+          <p class="hero-kicker">زندگی، اندیشه و میراث سازمانی</p>
+          <h1>حسن<br><em>طهرانی‌مقدم</em></h1>
+          <p class="hero-subtitle">روایت شکل‌گیری یک مسیر علمی و دفاعی</p>
+          <div class="hero-meta"><span>۱۳۳۸ — ۱۳۹۰</span><i></i><span>از تجربه جنگ تا نهادسازی پژوهشی</span></div>
+          <button class="primary-button" data-goto="1">آغاز روایت <b>←</b></button>
+        </div>
+        <figure class="portrait-frame zoomable">
+          <div class="portrait-glow"></div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Hassan_Tehrani_Moghaddam_2011-11-13_1_%281%29.jpg" alt="پرتره حسن طهرانی‌مقدم" data-fallback="portrait">
+          <figcaption>حسن طهرانی‌مقدم · تصویر: خبرگزاری فارس / Wikimedia Commons، مجوز CC BY 4.0</figcaption>
+        </figure>
+      </div>
+      <div class="hero-bottom"><span>یک زندگی در بستر تاریخ</span><span>۰۱ / ۱۵</span></div>
+    </section>
+
+    <section class="slide" data-title="پرسش محوری" data-notes="پرسش را به مخاطب بدهید: چگونه یک تجربه جنگی و محدودیت دسترسی به تجهیزات، به ایجاد یک مسیر سازمانی و صنعتی منجر شد؟ از ابتدا روشن کنید که پاسخ، حاصل مجموعه‌ای از عوامل است.">
+      <div class="slide-head"><span class="chapter">۰۱ / طرح مسئله</span><span class="rule"></span><span class="date-tag">زمینه تاریخی</span></div>
+      <div class="split-layout">
+        <div>
+          <p class="eyebrow">مقدمه</p>
+          <h2>از یک زندگی فردی<br><em>تا یک مسئله ملی</em></h2>
+          <p class="lead">حسن طهرانی‌مقدم از چهره‌های اثرگذار در شکل‌گیری ساختار موشکی سپاه بود؛ اما فهم نقش او بدون شناخت جنگ ایران و عراق، محدودیت‌های آن دوره و کار جمعی متخصصان ممکن نیست.</p>
+        </div>
+        <div class="question-panel">
+          <span class="quote-mark">؟</span>
+          <p>چگونه یک مسیر تحقیقاتی و سازمانی در طول زمان به توسعه یک صنعت راهبردی کمک کرد؟</p>
+          <div class="question-foot">پرسش راهنمای این ارائه</div>
+        </div>
+      </div>
+      <div class="three-points">
+        <article><b>۱</b><strong>فرد</strong><span>زندگی، تجربه و سبک مدیریت</span></article>
+        <article><b>۲</b><strong>نهاد</strong><span>سازماندهی، آموزش و پژوهش</span></article>
+        <article><b>۳</b><strong>بستر</strong><span>جنگ، محدودیت و راهبرد دفاعی</span></article>
+      </div>
+    </section>
+
+    <section class="slide" data-title="تولد و سال‌های نخست" data-notes="تاریخ تولد در منابع ایرانی ۶ آبان ۱۳۳۸ و محل تولد محله سرچشمه تهران ثبت شده است. اطلاعات خانوادگی را با احتیاط و بر اساس زندگی‌نامه‌های منتشرشده بیان کنید؛ درباره شخصیت درونی او از صفات قطعی و روان‌شناسانه پرهیز کنید.">
+      <div class="slide-head"><span class="chapter">۰۲ / ریشه‌ها</span><span class="rule"></span><span class="date-tag">۱۳۳۸ تا ۱۳۵۸</span></div>
+      <div class="split-layout bio-layout">
+        <div class="bio-copy">
+          <p class="eyebrow">تولد و دوران جوانی</p>
+          <h2>آغاز در<br><em>سرچشمه تهران</em></h2>
+          <p class="lead">حسن طهرانی‌مقدم در ۶ آبان ۱۳۳۸ در محله سرچشمه تهران به دنیا آمد. خانواده‌اش بعدها به محله‌های شکوفه و بهارستان نقل مکان کردند.</p>
+          <ul class="clean-list">
+            <li><span>محیط رشد</span> محله‌های قدیمی تهران و فعالیت‌های مسجدی</li>
+            <li><span>آموزش</span> تحصیل در رشته‌های فنی؛ زندگی‌نامه‌ها از ورود به مسیر آموزش عالی فنی در سال ۱۳۵۶ یاد می‌کنند.</li>
+            <li><span>فعالیت اجتماعی</span> حضور در گروه سرود مسجد زینب کبری و فعالیت‌های انقلابی در سال‌های منتهی به ۱۳۵۷</li>
+          </ul>
+          <p class="source-note">منبع زندگی‌نامه‌ای: پایگاه خاکریز / رشد؛ جزئیات تحصیلی در منابع روایی نیازمند تطبیق مستقل‌اند.</p>
+        </div>
+        <div class="date-monument">
+          <span class="date-label">تاریخ تولد</span>
+          <strong>۰۶</strong><span>آبان ۱۳۳۸</span>
+          <div class="date-line"></div>
+          <small>سرچشمه · تهران</small>
+          <div class="map-abstract"><span>تهران</span><i></i><b></b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="انقلاب و ورود به سپاه" data-notes="در سال‌های نخست پس از انقلاب، نهادهای تازه‌تأسیس با مسائل امنیتی و سازمانی متعددی روبه‌رو بودند. گزارش تسنیم از فعالیت او در اطلاعات منطقه ۳ سپاه شمال در آغاز دهه ۱۳۶۰ یاد می‌کند.">
+      <div class="slide-head"><span class="chapter">۰۳ / ورود به عرصه عمومی</span><span class="rule"></span><span class="date-tag">۱۳۵۷ تا ۱۳۵۹</span></div>
+      <p class="eyebrow">انقلاب و سال‌های نخست جمهوری اسلامی</p>
+      <h2>ورود به یک <em>ساختار نوپا</em></h2>
+      <div class="era-band">
+        <div class="era-year">۱۳۵۷</div><div class="era-line"></div><div class="era-year">۱۳۵۸</div><div class="era-line"></div><div class="era-year">۱۳۵۹</div>
+      </div>
+      <div class="two-columns">
+        <div class="editorial-block">
+          <span class="block-index">الف</span>
+          <h3>فضای سیاسی و اجتماعی</h3>
+          <p>پس از انقلاب، ساختارهای سیاسی و امنیتی کشور در حال شکل‌گیری بودند. هم‌زمان، بی‌ثباتی در برخی مناطق و تنش‌های داخلی، نیروهای تازه‌تأسیس را با مسئولیت‌های پیچیده روبه‌رو کرد.</p>
+        </div>
+        <div class="editorial-block">
+          <span class="block-index">ب</span>
+          <h3>مسئولیت‌های اولیه</h3>
+          <p>بر اساس روایت‌های منتشرشده، طهرانی‌مقدم در آغاز فعالیت سپاه در مسئولیت اطلاعات منطقه ۳ سپاه شمال فعالیت داشت و سپس مسیر حرفه‌ای او به حوزه پشتیبانی و سازماندهی نظامی پیوند خورد.</p>
+        </div>
+      </div>
+      <div class="bottom-callout"><b>نکته تاریخی</b><span>این دوره را باید در متن شکل‌گیری نهادهای پس از انقلاب بررسی کرد، نه جدا از تحولات سیاسی و اجتماعی آن زمان.</span></div>
+    </section>
+
+    <section class="slide" data-title="جنگ؛ نقطه عطف" data-notes="توضیح دهید که جنگ هشت‌ساله فشار شدیدی بر زیرساخت‌های دفاعی ایران وارد کرد. تحلیل IISS تأکید می‌کند که حملات عراق به شهرها و محدودیت توان هوایی، نیاز به ظرفیت‌های پاسخ و بازدارندگی را برجسته کرد. از ارائه جزئیات عملیاتی تسلیحات خودداری کنید.">
+      <div class="slide-head"><span class="chapter">۰۴ / نقطه عطف</span><span class="rule"></span><span class="date-tag">۱۳۵۹ تا ۱۳۶۷</span></div>
+      <div class="war-layout">
+        <div class="war-title">
+          <p class="eyebrow">جنگ ایران و عراق</p>
+          <h2>وقتی محدودیت‌ها<br><em>به مسئله‌ای راهبردی بدل شدند</em></h2>
+          <p class="lead">تهاجم عراق در شهریور ۱۳۵۹، کشور را درگیر جنگی طولانی کرد. حملات به شهرها و زیرساخت‌ها، مسئله پاسخ دفاعی و تداوم توان نظامی را به اولویتی جدی تبدیل کرد.</p>
+        </div>
+        <div class="pressure-list">
+          <div><span>۰۱</span><strong>محدودیت دسترسی</strong><p>اختلال در روابط خارجی و دشواری تأمین قطعات، نگهداری و پشتیبانی برخی تجهیزات.</p></div>
+          <div><span>۰۲</span><strong>فشار عملیاتی</strong><p>نیاز به پاسخ در شرایطی که ظرفیت‌های متعارف دفاعی با محدودیت روبه‌رو بودند.</p></div>
+          <div><span>۰۳</span><strong>تجربه نهادی</strong><p>ضرورت ایجاد ساختارهای آموزشی، پشتیبانی و پژوهشی برای حفظ توان در بلندمدت.</p></div>
+        </div>
+      </div>
+      <div class="citation-strip">برداشت تحلیلی بر پایه گزارش تاریخی مؤسسه بین‌المللی مطالعات راهبردی (IISS)، ۲۰۲۲.</div>
+    </section>
+
+    <section class="slide" data-title="اندیشه خودکفایی" data-notes="خودکفایی را معادل قطع کامل همه وابستگی‌ها معرفی نکنید. در ادبیات سیاست صنعتی، خوداتکایی معمولاً به معنای توسعه تدریجی توان جذب دانش، تعمیر، نگهداری، تولید و مدیریت زنجیره تأمین است.">
+      <div class="slide-head"><span class="chapter">۰۵ / تغییر نگاه</span><span class="rule"></span><span class="date-tag">یادگیری از محدودیت</span></div>
+      <p class="eyebrow">شکل‌گیری تفکر خودکفایی</p>
+      <h2>خودکفایی؛ <em>یک فرایند، نه یک شعار</em></h2>
+      <p class="lead narrow">تجربه جنگ، اهمیت ایجاد ظرفیت‌های پایدار در داخل کشور را برجسته کرد. این مسیر تنها به ساخت محصول محدود نبود؛ بلکه به دانش، نیروی انسانی، سازمان و انتقال تجربه وابسته بود.</p>
+      <div class="process-flow">
+        <div class="process-step"><span>۱</span><strong>شناخت نیاز</strong><small>تعریف مسئله در شرایط واقعی</small></div>
+        <b class="flow-arrow">←</b>
+        <div class="process-step"><span>۲</span><strong>یادگیری</strong><small>جذب تجربه و دانش تخصصی</small></div>
+        <b class="flow-arrow">←</b>
+        <div class="process-step"><span>۳</span><strong>نهادسازی</strong><small>ساخت تیم و ساختار پایدار</small></div>
+        <b class="flow-arrow">←</b>
+        <div class="process-step"><span>۴</span><strong>تداوم پژوهش</strong><small>آموزش و بهبود مستمر</small></div>
+      </div>
+      <div class="footnote-panel"><strong>تمایز مهم</strong><p>خودکفایی به معنای بی‌نیازی مطلق نیست؛ توانایی یادگیری، نگهداری، توسعه و تصمیم‌گیری مستقل‌تر در یک حوزه است.</p></div>
+    </section>
+
+    <section class="slide" data-title="آغاز مسیر موشکی" data-notes="در آبان ۱۳۶۲ مأموریت راه‌اندازی و سازماندهی فرماندهی موشکی زمین‌به‌زمین سپاه به او واگذار شد. این تاریخ در گزارش‌های رسمی و رسانه‌ای تکرار شده است. در این ارائه فقط به سطح نهادی و تاریخی پرداخته می‌شود.">
+      <div class="slide-head"><span class="chapter">۰۶ / آغاز مأموریت</span><span class="rule"></span><span class="date-tag">آبان ۱۳۶۲</span></div>
+      <div class="mission-layout">
+        <div>
+          <p class="eyebrow">آغاز مسیر موشکی</p>
+          <h2>یک مأموریت تازه؛<br><em>ساختن یک ساختار</em></h2>
+          <p class="lead">در آبان ۱۳۶۲، مسئولیت راه‌اندازی و سازماندهی فرماندهی موشکی زمین‌به‌زمین سپاه به طهرانی‌مقدم سپرده شد؛ نقطه‌ای مهم در مسیر حرفه‌ای او و تاریخ سازمانی این حوزه.</p>
+          <div class="fact-line"><b>۱۳۶۲</b><span>واگذاری مأموریت سازماندهی</span></div>
+          <div class="fact-line"><b>۱۳۶۴</b><span>انتصاب به فرماندهی موشکی نیروی هوایی سپاه، بنا بر روایت‌های منتشرشده</span></div>
+        </div>
+        <div class="mission-visual" aria-label="تصویر انتزاعی از شکل‌گیری یک ساختار سازمانی">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="node node-center">۱۳۶۲</div><div class="node node-a">نیرو</div><div class="node node-b">دانش</div><div class="node node-c">سازمان</div>
+          <p>از مأموریت محدود<br>تا ساختار ماندگار</p>
+        </div>
+      </div>
+      <p class="source-note">منبع: گزارش تسنیم درباره سیر مسئولیت‌ها؛ تطبیق با زندگی‌نامه منتشرشده در خاکریز.</p>
+    </section>
+
+    <section class="slide" data-title="از وابستگی تا ظرفیت داخلی" data-notes="توسعه ظرفیت داخلی یک روند تدریجی و چندعاملی بود. IISS به واردات اولیه، کمک خارجی و سپس تلاش برای ایجاد توان تولیدی و دانش بومی اشاره می‌کند. روایت را از دوگانه ساده وابستگی/استقلال دور نگه دارید.">
+      <div class="slide-head"><span class="chapter">۰۷ / تحول نهادی</span><span class="rule"></span><span class="date-tag">دهه ۱۳۶۰ به بعد</span></div>
+      <p class="eyebrow">عبور تدریجی از وابستگی</p>
+      <h2>ظرفیت داخلی چگونه <em>شکل می‌گیرد؟</em></h2>
+      <div class="capacity-grid">
+        <div class="capacity-quote"><span class="giant-quote">«</span><p>توسعه صنعتی، بیش از یک محصول، به حافظه سازمانی و شبکه‌ای از تخصص‌ها نیاز دارد.</p><small>جمع‌بندی تحلیلی این ارائه</small></div>
+        <div class="capacity-steps">
+          <div><b>دانش</b><span>جذب و انباشت تجربه فنی</span></div>
+          <div><b>نیروی انسانی</b><span>آموزش و پرورش متخصصان</span></div>
+          <div><b>سازمان</b><span>تقسیم مسئولیت و هماهنگی</span></div>
+          <div><b>زیرساخت</b><span>پژوهش، ارزیابی و پشتیبانی</span></div>
+        </div>
+      </div>
+      <p class="source-note">IISS نشان می‌دهد که مسیر برنامه موشکی ایران، ترکیبی از خرید خارجی، انتقال دانش و تلاش برای افزایش ظرفیت داخلی بوده است؛ بنابراین روایت «استقلال کامل و ناگهانی» دقیق نیست.</p>
+    </section>
+
+    <section class="slide" data-title="نقش در توسعه صنعت دفاعی" data-notes="در این اسلاید از نمودار کیفی استفاده شده است، نه داده آماری. عرض مراحل صرفاً نظم مفهومی را نشان می‌دهد و بیانگر درصد، بودجه یا میزان رشد نیست. بر نقش افراد دیگر، دانشگاه‌ها و سازمان‌های پشتیبان نیز تأکید کنید.">
+      <div class="slide-head"><span class="chapter">۰۸ / نقش و شبکه</span><span class="rule"></span><span class="date-tag">مدیریت و تخصص</span></div>
+      <p class="eyebrow">نقش او در توسعه صنعت دفاعی</p>
+      <h2>اثرگذاری در نقطه اتصال <em>مدیریت و دانش</em></h2>
+      <div class="role-layout">
+        <div class="role-chart">
+          <div class="chart-caption"><strong>چرخه شکل‌گیری ظرفیت سازمانی</strong><span>مدل مفهومی · نه آمار کمی</span></div>
+          <div class="stage-row"><span>۱</span><div><b>تعریف مأموریت</b><small>تبدیل نیاز به برنامه سازمانی</small></div><i style="--w:36%"></i></div>
+          <div class="stage-row"><span>۲</span><div><b>تیم‌سازی</b><small>همکاری نیروهای باتجربه و جوان</small></div><i style="--w:58%"></i></div>
+          <div class="stage-row"><span>۳</span><div><b>پژوهش و یادگیری</b><small>انباشت دانش و تجربه</small></div><i style="--w:78%"></i></div>
+          <div class="stage-row"><span>۴</span><div><b>تداوم نهادی</b><small>انتقال تجربه و حفظ ساختار</small></div><i style="--w:100%"></i></div>
+        </div>
+        <div class="role-aside">
+          <h3>نقش فردی در کنار نقش جمعی</h3>
+          <p>گزارش‌ها از نقش او در سازماندهی و هدایت مجموعه‌های پژوهشی و خودکفایی یاد می‌کنند؛ اما دستاوردهای صنعتی حاصل همکاری مهندسان، نیروهای پشتیبانی، مدیران و نهادهای متعدد است.</p>
+          <div class="mini-stat"><strong>شبکه</strong><span>دانشگاه · صنعت · سازمان · نیروی انسانی</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="خط زمانی" data-notes="برای مرور تاریخ‌ها، روی هر نقطه تایم‌لاین کلیک کنید. تاریخ‌های کلیدی مانند تولد، آغاز جنگ، مأموریت ۱۳۶۲، انتصاب ۱۳۶۴ و شهادت ۱۳۹۰ در منابع متعدد آمده‌اند. برخی جزئیات روایی و خاطرات، در بخش توضیحات با برچسب روایت رسمی مشخص شده‌اند.">
+      <div class="slide-head"><span class="chapter">۰۹ / مرور رویدادها</span><span class="rule"></span><span class="date-tag">خط زمانی تعاملی</span></div>
+      <p class="eyebrow">از دهه ۱۳۳۰ تا ۱۳۹۰</p>
+      <h2>مسیر زندگی در <em>گذر زمان</em></h2>
+      <div class="timeline-shell">
+        <div class="timeline-detail" id="timelineDetail" aria-live="polite">
+          <span class="detail-year">۱۳۳۸</span><h3>تولد در تهران</h3><p>۶ آبان؛ محله سرچشمه تهران. این تاریخ در زندگی‌نامه‌های منتشرشده ثبت شده است.</p><small>نوع داده: زندگی‌نامه‌ای</small>
+        </div>
+        <div class="timeline-track" id="timelineTrack" role="group" aria-label="رویدادهای زندگی">
+          <button class="time-point selected" data-index="0"><span>۱۳۳۸</span><i></i></button>
+          <button class="time-point" data-index="1"><span>۱۳۵۷</span><i></i></button>
+          <button class="time-point" data-index="2"><span>۱۳۵۹</span><i></i></button>
+          <button class="time-point" data-index="3"><span>۱۳۶۰</span><i></i></button>
+          <button class="time-point" data-index="4"><span>۱۳۶۲</span><i></i></button>
+          <button class="time-point" data-index="5"><span>۱۳۶۴</span><i></i></button>
+          <button class="time-point" data-index="6"><span>۱۳۸۴–۸۵</span><i></i></button>
+          <button class="time-point" data-index="7"><span>۱۳۹۰</span><i></i></button>
+        </div>
+        <div class="timeline-hint">برای دیدن جزئیات هر رویداد، یکی از تاریخ‌ها را انتخاب کنید.</div>
+      </div>
+      <div class="timeline-legend"><span><i class="dot fact"></i> تاریخ مستند در منابع</span><span><i class="dot narrative"></i> جزئیات روایی / نیازمند احتیاط</span></div>
+    </section>
+
+    <section class="slide" data-title="ویژگی‌های مدیریتی" data-notes="صفات شخصیتی را به‌عنوان توصیف‌های مطرح‌شده در خاطرات و روایت‌های رسمی بیان کنید، نه سنجه‌های علمی. درباره مدیریت، گزارش تسنیم به نقل از سخنان رهبری از توان مدیریتی و افق بلند او یاد می‌کند.">
+      <div class="slide-head"><span class="chapter">۱۰ / سبک کار</span><span class="rule"></span><span class="date-tag">مدیریت و یادگیری</span></div>
+      <p class="eyebrow">ویژگی‌های مدیریتی و علمی</p>
+      <h2>مدیریت به‌مثابه <em>ساختن امکان همکاری</em></h2>
+      <div class="traits-layout">
+        <div class="trait-feature"><span class="trait-symbol">↗</span><h3>نگاه بلندمدت</h3><p>توجه به ساختن ظرفیت‌هایی که فراتر از یک مأموریت کوتاه‌مدت دوام بیاورند.</p></div>
+        <div class="trait-list">
+          <div><b>تیم‌سازی</b><span>پیوند دادن تخصص‌های متفاوت</span></div>
+          <div><b>پشتکار</b><span>پیگیری مسائل پیچیده در گذر زمان</span></div>
+          <div><b>اعتماد به تخصص</b><span>اتکا به نیروهای باتجربه و جوان</span></div>
+          <div><b>یادگیری</b><span>تبدیل تجربه به دانش سازمانی</span></div>
+        </div>
+      </div>
+      <p class="source-note">این توصیف‌ها از روایت‌های همکاران و گزارش‌های رسمی استخراج شده‌اند و ارزیابی روان‌شناختی مستقل محسوب نمی‌شوند.</p>
+    </section>
+
+    <section class="slide" data-title="میراث علمی و سازمانی" data-notes="میراث سازمانی را در سه سطح توضیح دهید: حفظ دانش، تربیت نیروی انسانی و استمرار ساختارها. درباره اینکه کدام دستاورد دقیقاً به شخص او تعلق دارد، از نسبت دادن انحصاری پرهیز کنید.">
+      <div class="slide-head"><span class="chapter">۱۱ / میراث</span><span class="rule"></span><span class="date-tag">فراتر از یک فرد</span></div>
+      <div class="legacy-layout">
+        <div class="legacy-title"><p class="eyebrow">میراث علمی و سازمانی</p><h2>آنچه باقی می‌ماند،<br><em>یک شبکه توانمندی است</em></h2><p class="lead">اهمیت تاریخی او را می‌توان در نقشی دید که در شکل‌گیری ساختارهای تخصصی، سازماندهی پژوهش و پیوند تجربه جنگ با برنامه‌ریزی بلندمدت ایفا کرد.</p></div>
+        <div class="legacy-orbit">
+          <div class="legacy-center">میراث<br>سازمانی</div>
+          <div class="legacy-node n1">انتقال<br>تجربه</div>
+          <div class="legacy-node n2">نیروی<br>انسانی</div>
+          <div class="legacy-node n3">ساختار<br>پژوهشی</div>
+          <div class="legacy-node n4">همکاری<br>تخصصی</div>
+        </div>
+      </div>
+      <div class="legacy-footer"><b>اصل کلیدی</b><span>دانش وقتی به میراث تبدیل می‌شود که از حافظه افراد عبور کند و در نهادها، آموزش و تجربه جمعی ثبت شود.</span></div>
+    </section>
+
+    <section class="slide" data-title="شهادت در بیدگنه" data-notes="در ۲۱ آبان ۱۳۹۰، انفجاری در پادگان شهید مدرس در منطقه بیدگنه ملارد رخ داد و طهرانی‌مقدم و شماری از همکارانش جان باختند. گزارش تسنیم در بازخوانی سالگرد، شمار جان‌باختگان را ۳۹ نفر ذکر می‌کند. از بازسازی جزئیات فنی حادثه یا تصاویر خشن استفاده نکنید.">
+      <div class="slide-head"><span class="chapter">۱۲ / پایان یک فصل</span><span class="rule"></span><span class="date-tag">۲۱ آبان ۱۳۹۰</span></div>
+      <div class="memorial-layout">
+        <div class="memorial-date"><span>۲۱</span><small>آبان ۱۳۹۰</small><i></i><b>بیدگنه · ملارد</b></div>
+        <div class="memorial-copy">
+          <p class="eyebrow">شهادت</p>
+          <h2>پایان زندگی؛<br><em>آغاز روایت میراث</em></h2>
+          <p class="lead">در ۲۱ آبان ۱۳۹۰، انفجاری در پادگان شهید مدرس در منطقه بیدگنه ملارد رخ داد. حسن طهرانی‌مقدم و جمعی از همکارانش در این حادثه جان باختند.</p>
+          <p>این واقعه تنها فقدان یک مدیر نبود؛ شماری از نیروهای متخصص و اعضای یک مجموعه کاری نیز جان خود را از دست دادند. گزارش‌های منتشرشده از ۳۹ جان‌باخته در این حادثه یاد می‌کنند.</p>
+          <div class="respect-note">یادبود همه جان‌باختگان حادثه بیدگنه</div>
+        </div>
+      </div>
+      <p class="source-note">تاریخ شمسی و شرح کلی واقعه: گزارش تسنیم، ۲۱ آبان ۱۳۹۸. جزئیات حادثه در این ارائه عمداً به سطح تاریخی و غیرعملیاتی محدود شده است.</p>
+    </section>
+
+    <section class="slide" data-title="ارزیابی تاریخی" data-notes="جمع‌بندی متوازن: نقش او در ایجاد و سازماندهی یک ساختار مهم بود؛ اما توسعه یک برنامه ملی نتیجه مجموعه‌ای از تصمیم‌های سیاسی، منابع، انتقال دانش، همکاری خارجی در دوره‌هایی و تلاش جمعی متخصصان است. پژوهش IISS زمینه گسترده‌تری برای این ارزیابی فراهم می‌کند.">
+      <div class="slide-head"><span class="chapter">۱۳ / ارزیابی</span><span class="rule"></span><span class="date-tag">نگاه تاریخی</span></div>
+      <p class="eyebrow">جمع‌بندی و ارزیابی تاریخی</p>
+      <h2>نقش یک فرد را چگونه <em>منصفانه بسنجیم؟</em></h2>
+      <div class="balance-layout">
+        <div class="balance-side">
+          <span class="balance-label">نقش طهرانی‌مقدم</span>
+          <h3>سازماندهی و مدیریت</h3>
+          <p>مشارکت در ایجاد ساختارهای اولیه، هدایت مجموعه‌های تخصصی و پیوند دادن نیازهای دفاعی با ظرفیت‌های پژوهشی.</p>
+        </div>
+        <div class="balance-symbol">+</div>
+        <div class="balance-side">
+          <span class="balance-label">نقش جمعی و ساختاری</span>
+          <h3>شبکه متخصصان و نهادها</h3>
+          <p>کار مهندسان، پژوهشگران، نیروهای پشتیبانی، نهادهای دانشگاهی و تصمیم‌های ک
